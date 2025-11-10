@@ -1,5 +1,5 @@
 <?php
-
+header('Content-Type: application/json');
 class ResponseService {
 
     public static function response(int $status_code, $payload){
