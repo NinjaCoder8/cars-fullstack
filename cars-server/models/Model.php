@@ -2,12 +2,13 @@
 abstract class Model{
 
     protected static string $table;
-    protected static string $primary_key = "id";
+    //protected static string $primary_key = "id";
 
-    public static function find(mysqli $connection, int $id){
+    public static function find(mysqli $connection, string $id, string $primary_key = "id"){
         $sql = sprintf("SELECT * from %s WHERE %s = ?",
                        static::$table,
-                       static::$primary_key);
+                       $primary_key);
+                       //static::$primary_key);
 
         $query = $connection->prepare($sql);
         $query->bind_param("i", $id);
