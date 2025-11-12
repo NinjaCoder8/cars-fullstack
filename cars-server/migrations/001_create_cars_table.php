@@ -12,4 +12,5 @@ $query->execute();
 
 echo "Table(s) Created!";
 
+
 ?>
