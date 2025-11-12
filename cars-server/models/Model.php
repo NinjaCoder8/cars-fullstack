@@ -36,6 +36,7 @@ abstract class Model{
 
 //I comment the other functions because first I did the assignment in this way by giving the functions the name of db columns
 // then I implemented it as Charbel asks us during the meeting
+//They are implemented down below the commented functions
 
 
 
