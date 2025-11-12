@@ -63,20 +63,12 @@ function deleteCar(){
 */
 function createNewCar(){
     global $connection;
-    Car::create($connection, [
-    'name' => 'kia',
-    'color' => 'white',
-    'year' => '2020'
-]);
+    Car::create($connection, ['name' => 'kia','color' => 'white', 'year' => '2020']);
 }
 //createNewCar();
 function updateCurrentCar(){
        global $connection;
-car::update($connection, 8, [
-    'name' => 'nissan',
-    'color' => 'Black',
-    'year' => '20011'
-]);}
+car::update($connection, 8, ['name' => 'nissan','color' => 'Black','year' => '20011']);}
 //updateCurrentCar();
 function deleteCurrentCar(){
        global $connection;
