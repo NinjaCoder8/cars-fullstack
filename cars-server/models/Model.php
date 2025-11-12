@@ -23,6 +23,10 @@ abstract class Model{
         //implement this
     }
 
+    public function save(){
+        
+    }
+
 }
 
 

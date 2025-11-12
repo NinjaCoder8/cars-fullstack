@@ -14,7 +14,7 @@ class CarController {
             echo ResponseService::response(500, "ID is missing");
             return;
         }
-       
+
         //not allowed to write logic in my controller!!!
         //$car = Car::find($connection, $id);
         //$car = $car ? $car->toArray() : [];
